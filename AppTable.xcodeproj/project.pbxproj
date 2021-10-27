@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB31217A2726FF3A008996E6 /* CastomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3121792726FF3A008996E6 /* CastomTableViewCell.swift */; };
+		AB75D215272884B5003B3ECD /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75D214272884B5003B3ECD /* NewPlaceViewController.swift */; };
 		AB9AAC8127228F9700F1F434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9AAC8027228F9700F1F434 /* AppDelegate.swift */; };
 		AB9AAC8327228F9700F1F434 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9AAC8227228F9700F1F434 /* SceneDelegate.swift */; };
 		AB9AAC8827228F9700F1F434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9AAC8627228F9700F1F434 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		AB3121792726FF3A008996E6 /* CastomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastomTableViewCell.swift; sourceTree = "<group>"; };
+		AB75D214272884B5003B3ECD /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		AB9AAC7D27228F9700F1F434 /* AppTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9AAC8027228F9700F1F434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB9AAC8227228F9700F1F434 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				AB9AAC8227228F9700F1F434 /* SceneDelegate.swift */,
 				AB9AAC9427228FFF00F1F434 /* ListDataViewController.swift */,
 				AB3121792726FF3A008996E6 /* CastomTableViewCell.swift */,
+				AB75D214272884B5003B3ECD /* NewPlaceViewController.swift */,
 				AB9AAC8627228F9700F1F434 /* Main.storyboard */,
 				AB9AAC8927228F9800F1F434 /* Assets.xcassets */,
 				AB9AAC8B27228F9800F1F434 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB9AAC9527228FFF00F1F434 /* ListDataViewController.swift in Sources */,
+				AB75D215272884B5003B3ECD /* NewPlaceViewController.swift in Sources */,
 				AB9AAC8127228F9700F1F434 /* AppDelegate.swift in Sources */,
 				ABFD4A3A272712D300023907 /* PlaceModel.swift in Sources */,
 				AB31217A2726FF3A008996E6 /* CastomTableViewCell.swift in Sources */,
@@ -311,7 +315,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = group.kaznacheev.AppTable;
+				PRODUCT_BUNDLE_IDENTIFIER = "kaznacheev.a.s-yandex.ru.AppTable";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -341,7 +345,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = group.kaznacheev.AppTable;
+				PRODUCT_BUNDLE_IDENTIFIER = "kaznacheev.a.s-yandex.ru.AppTable";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
