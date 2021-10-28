@@ -14,8 +14,4 @@ class CastomTableViewCell: UITableViewCell {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     
-    
-
-    
-    
 }

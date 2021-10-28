@@ -26,11 +26,18 @@ class ListDataViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CastomTableViewCell
 
-        cell.nameLabel.text = plac[indexPath.row].name
-        cell.imagesOfPlase.image = UIImage(named: plac[indexPath.row].images)
-
-        cell.locationLabel.text = plac[indexPath.row].location
-        cell.typeLabel.text = plac[indexPath.row].type
+        var placIndex = plac[indexPath.row]
+        
+        cell.nameLabel.text = placIndex.name
+        
+        if placIndex.image == nil {
+            cell.imagesOfPlase.image = UIImage(named: placIndex.restaurantImage!)
+        } else {
+            cell.imagesOfPlase.image = placIndex.image
+        }
+        
+        cell.locationLabel.text = placIndex.location
+        cell.typeLabel.text = placIndex.type
         
         cell.imagesOfPlase.layer.cornerRadius = cell.imagesOfPlase.frame.size.height / 2 // Картинки круглые
         cell.imagesOfPlase.clipsToBounds = true // Отступ 
@@ -41,7 +48,13 @@ class ListDataViewController: UITableViewController {
         return 95
     }
     
-    @IBAction func canselAction (_ segue: UIStoryboardSegue) {}
+    @IBAction func unwindSegue (_ segue: UIStoryboardSegue) {
+        guard let newPlaceVC = segue.source as? NewPlaceViewController else {return}
+            
+        newPlaceVC.saveNewPlase()
+        plac.append(newPlaceVC.newPlace)
+        tableView.reloadData()
+    }
     
     /*
     // MARK: - Navigation

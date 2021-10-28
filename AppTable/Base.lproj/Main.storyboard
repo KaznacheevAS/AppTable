@@ -238,14 +238,22 @@
                     <navigationItem key="navigationItem" title="New Place" id="yZP-Jd-Zgx">
                         <barButtonItem key="leftBarButtonItem" title="Cansel" id="8Xh-AQ-Kty">
                             <connections>
-                                <segue destination="7Jb-Tx-u45" kind="unwind" unwindAction="canselAction:" id="GsN-zq-ode"/>
+                                <action selector="canselAction:" destination="FKb-YY-iDZ" id="QCm-Gw-7C5"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="rJb-KR-P7w"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="rJb-KR-P7w">
+                            <connections>
+                                <segue destination="7Jb-Tx-u45" kind="unwind" unwindAction="unwindSegue:" id="mL3-iD-dsd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="imagesOfPicker" destination="jNg-X0-vrU" id="hb5-MI-KA8"/>
+                        <outlet property="placeImages" destination="jNg-X0-vrU" id="hb5-MI-KA8"/>
+                        <outlet property="placeLocationTF" destination="wyS-k9-gf8" id="7xf-xX-mi3"/>
+                        <outlet property="placeNameTF" destination="B3O-pC-Cy8" id="SxT-vg-w9o"/>
+                        <outlet property="placeTypeTF" destination="UFF-PW-qQP" id="5EP-ke-Bn4"/>
+                        <outlet property="saveButton" destination="rJb-KR-P7w" id="kdI-95-3bM"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7r-a7-O3t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
